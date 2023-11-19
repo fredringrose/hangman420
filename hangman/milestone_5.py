@@ -1,6 +1,13 @@
 import random
 
 class Hangman:
+    """
+        Initialize the Hangman game.
+
+        Parameters:
+        - word_list (list): A list of words to be used in the game.
+        - num_lives (int): The number of lives the player has. Default is 5.
+    """
     def __init__(self, word_list, num_lives=5):
         self.word_list = word_list
         self.num_lives = num_lives
@@ -10,6 +17,15 @@ class Hangman:
         self.list_of_guesses = []
 
     def ask_for_input(self, guess):
+        """
+        Check if the input guess is valid.
+
+        Parameters:
+        - guess (str): The guessed letter.
+
+        Returns:
+        - bool: True if the guess is valid, False otherwise.
+        """
         if len(guess) == 1 and guess.isalpha() and guess not in self.list_of_guesses:
             return True
         else:
@@ -17,6 +33,12 @@ class Hangman:
             return False
 
     def check_guess(self, guess):
+        """
+        Check if the guessed letter is in the word.
+
+        Parameters:
+        - guess (str): The guessed letter.
+        """
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
             self.update_word_guessed(guess)
@@ -26,11 +48,20 @@ class Hangman:
             self.num_lives -= 1
 
     def update_word_guessed(self, guess):
+        """
+        Update the word_guessed list with the correctly guessed letter.
+
+        Parameters:
+        - guess (str): The correctly guessed letter.
+        """
         for i, letter in enumerate(self.word):
             if letter == guess:
                 self.word_guessed[i] = guess
 
     def play_game(self):
+        """
+        Start the Hangman game loop.
+        """
         print("Welcome to the Hangman Game!")
         while True:
             print(f"Word to guess: {' '.join(self.word_guessed)}")
