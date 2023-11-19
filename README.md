@@ -15,13 +15,16 @@ Tnis is my first attempt at creating a game using Python - part of my cloud engi
 ## Description
 The Hangman Game Project is an evolving Hangman game that starts as a simple guessing game. It randomly selects a fruit from a predefined list of five fruits, and the player is prompted to guess a letter from the chosen fruit. The aim of the project is to progressively build upon the basic game, introducing new features and challenges.
 
-## Description
-The Hangman Game Project is an evolving Hangman game that starts as a simple guessing game. It randomly selects a fruit from a predefined list of five fruits, and the player is prompted to guess a letter from the chosen fruit. The aim of the project is to progressively build upon the basic game, introducing new features and challenges.
-
 ### Project Goals
 - Build a foundational Hangman game
 - Expand the game's complexity over time
 - Provide an interactive and enjoyable gaming experience
+
+1. I will start off with conditional statements to create a basic version of the Hangman game that asks for user input and validates if the input is valid before checking whether the user's input is a correct guess.
+
+2. Defining functions
+
+3. Building a class
 
 ### What I Learned
 Throughout the development of this project, I aim to enhance my programming skills, especially in areas related to game development, user input handling, and project evolution.
