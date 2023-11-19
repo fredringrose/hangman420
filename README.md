@@ -20,11 +20,22 @@ The Hangman Game Project is an evolving Hangman game that starts as a simple gue
 - Expand the game's complexity over time
 - Provide an interactive and enjoyable gaming experience
 
-1. I will start off with conditional statements to create a basic version of the Hangman game that asks for user input and validates if the input is valid before checking whether the user's input is a correct guess.
+I will start off with conditional statements to create a basic version of the Hangman game that asks for user input and validates if the input is valid before checking whether the user's input is a correct guess.
 
-2. Defining functions
+#### Defining methods
 
-3. Building a class
+- ask_for_input
+- check_guess
+- update_word_guessed
+- play_game
+
+These methods shield the user from the complexities of the game's internal mechanics, promoting a clear and simplified interaction model. Abstraction allows for a more straightforward understanding of the game's functionality and facilitates future enhancements without impacting the external interface.
+
+#### Building a class
+
+Finally, introduces a Hangman class, encapsulating the game's logic and functionality. The class includes methods for handling user input, checking guesses, updating the word state, and orchestrating the game loop.
+
+Through the use of abstraction, the Hangman Game Project achieves a modular and organized structure, promoting maintainability and ease of extension as the project evolves.
 
 ### What I Learned
 Throughout the development of this project, I aim to enhance my programming skills, especially in areas related to game development, user input handling, and project evolution.
@@ -38,11 +49,21 @@ To run the Hangman Game Project on your local machine, follow these installation
 
 ## Usage
 
+Execute the Hangman game by running the script. Follow the on-screen instructions to guess letters and try to uncover the chosen word.
+
 ## File Structure
+
+hangman420/
+│
+├── hangman.py
+├── README.md
+├── .gitignore
+│
+└── 
 
 ## License
 
-
+This project is licensed under the MIT License.
 
 
 
